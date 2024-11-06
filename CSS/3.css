@@ -1,0 +1,17 @@
+/*section p{
+    color:blue;
+}*/
+
+/*child selector*/
+/*section > p {
+  color: pink;
+}*/
+
+/*section+p{
+    color:orange;
+}*/
+section~p{
+    color:orange;
+}
+
+

@@ -1,0 +1,10 @@
+div{
+    border: 1px solid blue;
+    width:5000 px;
+    height:500 px;
+    padding:10px;
+    margin:20px;
+    background-color:aqua;
+    display:inline-flex;
+
+}

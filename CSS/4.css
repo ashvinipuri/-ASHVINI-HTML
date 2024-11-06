@@ -1,0 +1,35 @@
+ h1,p{
+    /*text-align:center;*/
+    color:rgb(192, 27, 54);
+    text-align:start;
+    text-decoration-line:underline;
+    text-decoration-line:blue;
+     text-decoration-style:double;
+      text-decoration-style:dashed;
+      font size:small;
+      text-indent:50px;
+      letter-spacing:7px;
+      word spacing:10px;
+      line-height:40px;
+      text-transform:uppercase;
+        text-transform:capitalize;
+        font-family:Verdana,Genava,Tahoma, sans-serif;
+        text-shadow:5px 5px 4px;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1{
+    width:500px;
+    height:50px;
+} 
+div{
+  background-color: aqua;
+}
+
+p{
+    padding:50px;
+    border:1px solid black;
+}
