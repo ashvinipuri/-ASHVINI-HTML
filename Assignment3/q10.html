@@ -1,0 +1,37 @@
+<!-- 12) show any image on browser with dimension 200X200 . apply border radius with 10px. on mouse over show image in circle format (i.e 50% border radius) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #a1 img{
+width:200px;
+height:200px;
+overflow:hidden;
+border-radius:10px;
+transition:1.5s ease;
+    }
+ #a1
+ {
+width:200px;
+height:200px;
+overflow:hidden;
+border-radius:10px;
+transition:1.5s ease;}
+
+#a1:hover img
+{
+border-radius:50%;
+
+}
+</style>
+<body>
+    <div id="a1">
+    <img src="./flower.jpg" alt="">
+    </div> 
+</body>
+</html>
