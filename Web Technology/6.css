@@ -1,0 +1,28 @@
+#x1{
+    width: 1000px;
+    height:100px;
+    background-color:rgb(255,128,25);
+    margin: auto;
+}
+
+#x2{
+    width: 1000px;
+    height:75px;
+    background-color:rgb(255,150,225);
+    margin: auto;
+}
+
+#x3{
+    width: 1000px;
+    height:150px;
+    background-color:rgba(34, 165, 20, 0.42);
+    margin: auto;
+}
+
+
+#x4{
+    width: 1000px;
+    height:100px;
+    background-color:rgba(80, 20, 165, 0.685);
+    margin: auto;
+}
