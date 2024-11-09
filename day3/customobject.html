@@ -1,0 +1,27 @@
+<script>
+  // an object u have ur custom keys
+  var product = {
+    name: "puma",
+    price: 1000,
+    size: ["xl", "xxl"],
+    path: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRizVXN2p5sTr_hxdYLjYCkV0-riQWlgCyYNecNJk1bAaU0t3k2a_K4lTOWDo0CeTCJlty_XuJEU0EYHxd1ezGGzOGOuxXxyhxSNvccIuHGw6wO9BWrMIDM&usqp=CAc",
+  };
+
+  document.write(`
+  
+<div>
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+</div>
+`);
+  console.log(product);
+</script>
+<style>
+  img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    padding: 10px;
+  }
+</style>

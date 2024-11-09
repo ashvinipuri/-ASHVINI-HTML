@@ -1,0 +1,9 @@
+<div></div>
+<script>
+  setInterval(function () {
+    var record = new Date(); // date is a class in JavaScript that represents a date and time. , it is present java scrpit librarry
+    console.log(record); // logs the current date and time in console
+
+    document.querySelector("div").innerHTML = record.toLocaleString();
+  }, 1000);
+</script>

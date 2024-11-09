@@ -1,0 +1,43 @@
+<input type="text" name="" id="x" />
+<input type="text" name="" id="y" />
+
+<button onclick="f1()">+</button>
+<button onclick="f2()">-</button>
+<button onclick="f3()">*</button>
+<button onclick="f4()">/</button>
+<p id="result"></p>
+<p>Addition<span id="y1"></span></p>
+<p>subtraction<span id="y2"></span></p>
+<p>Multiplication<span id="y3"></span></p>
+<p>Division<span id="y4"></span></p>
+
+<script>
+  function f1() {
+    console.log(
+      (document.getElementById("y1").innerHTML =
+        parseFloat(document.getElementById("x").value) +
+        parseFloat(document.getElementById("y").value))
+    );
+  }
+  function f2() {
+    console.log(
+      (document.getElementById("y2").innerHTML =
+        parseFloat(document.getElementById("x").value) -
+        parseFloat(document.getElementById("y").value))
+    );
+  }
+  function f3() {
+    console.log(
+      (document.getElementById("y3").innerHTML =
+        parseFloat(document.getElementById("x").value) *
+        parseFloat(document.getElementById("y").value))
+    );
+  }
+  function f4() {
+    console.log(
+      (document.getElementById("y4").innerHTML =
+        parseFloat(document.getElementById("x").value) /
+        parseFloat(document.getElementById("y").value))
+    );
+  }
+</script>

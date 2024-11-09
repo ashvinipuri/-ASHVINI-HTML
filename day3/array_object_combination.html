@@ -1,0 +1,45 @@
+<script>
+  var product = [
+    {
+      name: "puma",
+      price: 1000,
+      size: ["xl", "xxl"],
+      path: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRizVXN2p5sTr_hxdYLjYCkV0-riQWlgCyYNecNJk1bAaU0t3k2a_K4lTOWDo0CeTCJlty_XuJEU0EYHxd1ezGGzOGOuxXxyhxSNvccIuHGw6wO9BWrMIDM&usqp=CAc",
+    },
+    {
+      name: "adidas",
+      price: 3000,
+      size: ["xl", "xxl"],
+      path: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRizVXN2p5sTr_hxdYLjYCkV0-riQWlgCyYNecNJk1bAaU0t3k2a_K4lTOWDo0CeTCJlty_XuJEU0EYHxd1ezGGzOGOuxXxyhxSNvccIuHGw6wO9BWrMIDM&usqp=CAc",
+    },
+    {
+      name: "nike",
+      price: 9000,
+      size: ["xl", "xxl"],
+      path: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRizVXN2p5sTr_hxdYLjYCkV0-riQWlgCyYNecNJk1bAaU0t3k2a_K4lTOWDo0CeTCJlty_XuJEU0EYHxd1ezGGzOGOuxXxyhxSNvccIuHGw6wO9BWrMIDM&usqp=CAc",
+    },
+  ];
+  for (let ans of product) {
+    console.log(ans);
+    // for of loop used to iterate over arrays
+    document.write(`
+     <div>
+    <img src="${ans.path}" alt="">
+    <h2>${ans.price}</h2>
+    <p>${ans.name}</p>
+</div>
+    
+    `);
+  }
+</script>
+<style>
+  div {
+    float: left;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    padding: 10px;
+  }
+</style>
