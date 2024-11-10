@@ -1,0 +1,16 @@
+<!---
+
+a@a.com
+a@a.co.in
+(a)@(a).(co).(in)?
+-->
+<script>
+  //([a-zA-Z]{2,}) - 3rd group having minimum  2 or  maximum more alphabet characters
+  //(\.[]{2,}) -  4th last group having dot character and 2 or more characters
+  // ^([]+) - 1st group having alphanumeric characters and @ symbol
+  //@([a-zA-Z0-9]+) - 2nd group having alphanumeric characters
+  var exp = /^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,})(\.[]{2,})?$/;
+  var emailid = "ashvinipuri1106@mail.com";
+  var result = exp.test(emailid);
+  console.log(result);
+</script>
