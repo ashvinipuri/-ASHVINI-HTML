@@ -1,0 +1,9 @@
+{
+  "name": "Ashvini",
+  "age": 23,
+  "hobbies": ["cooking", "making crafts"],
+  "place": {
+    "location": "pune",
+    "pincode": 411027
+  }
+}

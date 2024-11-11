@@ -1,0 +1,26 @@
+<input type="date" name="" id="x1" />
+<button>Get</button>
+<p></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("button").click(function () {
+      alert("Date");
+      var record = $("#x1").val(); // get the value of the input field.
+      console.log(record);
+      var res = record.split("-"); // split is a method that splits a string into an array of substrings.
+      console.log(res[0]); // it will print the year from the date.
+
+      var dateobject = new Date(); //  date is  a class create a new Date object.
+      console.log(dateobject);
+
+      var currentyear = dateobject.getFullYear(); // get the current year.
+      console.log(currentyear);
+
+      var age = currentyear - res[0];
+      $("p").html("Your age is: " + age); // display the age in the paragraph.
+    });
+  });
+</script>
