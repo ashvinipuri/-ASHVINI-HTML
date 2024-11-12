@@ -1,0 +1,13 @@
+<script>
+    let arr = [1, 2, 3, 4];
+    let newarr = [];
+    for (let index in arr) {
+    newarr.push(arr[index] ** 2);
+}
+    console.log(newarr);
+    let squaredForEach = [];
+    arr.forEach(num => squaredForEach.push(num ** 2));
+    console.log(squaredForEach);
+    let squaredMap = arr.map(num => num ** 2);
+    console.log(squaredMap);
+</script>

@@ -1,0 +1,16 @@
+<input type="text" id="mobile" placeholder="Enter mobile number">
+<button onclick="validateMobile()">Check</button>
+<p id="result"></p>
+
+<script>
+function validateMobile() {
+    const mobile = document.getElementById("mobile").value;
+    const isValid = /^[0-9]{10}$/.test(mobile);
+    
+    if (isValid) {
+        document.getElementById("result").innerText = "Valid Mobile";
+    } else {
+        document.getElementById("result").innerText = "Invalid Mobile";
+    }
+}
+</script>

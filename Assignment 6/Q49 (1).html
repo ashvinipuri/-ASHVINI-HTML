@@ -1,0 +1,15 @@
+<input type="text" id="email" placeholder="Enter email">
+<button onclick="validateEmail()">Check</button>
+<p id="result"></p>
+
+<script>
+function validateEmail() {
+    const email = document.getElementById("email").value;
+    const isValid = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
+    if (isValid) {
+        document.getElementById("result").innerText = "Valid Email";
+    } else {
+        document.getElementById("result").innerText = "Invalid Email";
+    }
+}
+</script>

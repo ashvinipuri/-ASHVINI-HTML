@@ -1,0 +1,15 @@
+<input type="text" id="txt" placeholder="Enter a number">
+<button onclick="displaySquare()">Display Square</button>
+<p id="para"></p>
+
+<script>
+function displaySquare() {
+    const value = document.getElementById("txt").value;
+    if (!isNaN(value)) {
+        const square = Math.pow(value, 2);
+        document.getElementById("para").innerText = square;
+    } else {
+        document.getElementById("para").innerText = "Please enter a valid number";
+    }
+}
+</script>
