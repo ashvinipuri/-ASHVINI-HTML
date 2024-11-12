@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over Change Content</title>
+</head>
+<body>
+    <p id="para" onmouseover="changeContent()">This is some dummy content.</p>
+
+    <script>
+        function changeContent() {
+            document.getElementById("para").innerText = "Content has been changed on mouse over!";
+        }
+    </script>
+</body>
+</html>

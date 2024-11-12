@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="text" id="textBox" placeholder="Enter text">
+    <p id="para1"></p>
+    <p id="para2"></p>
+
+    <script>
+      document.getElementById('textBox').addEventListener('keyup', function() {
+        let inputData = this.value;
+        document.getElementById('para1').innerText = inputData.toUpperCase();
+        document.getElementById('para2').innerText = inputData.toLowerCase();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check for Number</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter a number">
+    <button onclick="validateNumber()">Validate</button>
+    <p id="error"></p>
+
+    <script>
+        function validateNumber() {
+            const value = document.getElementById("txt").value;
+            const errorParagraph = document.getElementById("error");
+
+            if (isNaN(value)) {
+                errorParagraph.innerText = "Only numbers are required.";
+            } else {
+                errorParagraph.innerText = "";
+            }
+        }
+    </script>
+</body>
+</html>

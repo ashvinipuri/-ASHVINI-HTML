@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Move your mouse anywhere on the screen.</p>
+    <p id="coords"></p>
+
+    <script>
+      document.addEventListener('mousemove', function(event) {
+        let x = event.clientX;
+        let y = event.clientY;
+        document.getElementById('coords').innerText = `X: ${x}, Y: ${y}`;
+      });
+    </script>
+  </body>
+</html>

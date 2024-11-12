@@ -1,0 +1,29 @@
+<body style="text-align:center;">
+    <h1 style="color:rgb(69, 39, 39);">
+        Hello World!
+    </h1>
+
+    <h3>
+        Click on button to change the 
+        background color
+    </h3>
+
+    <button onclick="myFunc()">
+        Click here
+    </button>
+
+    <h2 id="a" style="color:rgba(108, 39, 39, 0.801);"></h2>
+
+    <script>
+        let result = document.getElementById("a");
+
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+
+        function myFunc() {
+            changeColor('lightblue');
+            result.innerHTML = "Background Color changed";
+        }        
+    </script>
+</body>

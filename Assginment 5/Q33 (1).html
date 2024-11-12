@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Empty Textbox</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter a value">
+    <button onclick="checkEmpty()">Check Empty</button>
+
+    <script>
+        function checkEmpty() {
+            const textbox = document.getElementById("txt");
+            if (textbox.value === "") {
+                textbox.style.border = "2px solid yellow";
+            } else {
+                textbox.style.border = "";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Textbox Values</title>
+</head>
+<body>
+    <input type="text" id="txt1" placeholder="Enter first number">
+    <input type="text" id="txt2" placeholder="Enter second number">
+    <button onclick="calculateSum()">Get Sum</button>
+    <p id="para"></p>
+
+    <script>
+        function calculateSum() {
+            const data1 = document.getElementById("txt1").value;
+            const data2 = document.getElementById("txt2").value;
+            const num1 = parseFloat(data1);
+            const num2 = parseFloat(data2);
+            
+            if (!isNaN(num1) && !isNaN(num2)) {
+                document.getElementById("para").innerText = `Sum: ${num1 + num2}`;
+            } else {
+                document.getElementById("para").innerText = "Please enter valid numbers.";
+            }
+        }
+    </script>
+</body>
+</html>

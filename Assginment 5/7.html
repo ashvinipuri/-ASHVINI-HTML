@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="hoverPara">Hover over this paragraph to change the background color.</p>
+
+    <script>
+      const para = document.getElementById('hoverPara');
+      para.addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'grey';
+      });
+      para.addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'lightgrey';
+      });
+    </script>
+  </body>
+</html>

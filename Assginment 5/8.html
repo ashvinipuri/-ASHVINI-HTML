@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="text" id="textbox" placeholder="Focus or Blur me">
+    
+    <script>
+      let calculate = function() {
+        console.log('Dummy text in console');
+      };
+
+      let textbox = document.getElementById('textbox');
+      textbox.addEventListener('blur', calculate);  
+      textbox.addEventListener('focus', calculate);
+    </script>
+  </body>
+</html>

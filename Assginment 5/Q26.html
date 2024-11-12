@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Color Change</title>
+</head>
+<body>
+    <p id="para" onmouseover="changeToGrey()" onmouseout="changeToBlue()">
+        This is some dummy content.
+    </p>
+
+    <script>
+        function changeToGrey() {
+            document.getElementById("para").style.color = "grey";
+        }
+
+        function changeToBlue() {
+            document.getElementById("para").style.color = "blue";
+        }
+    </script>
+</body>
+</html>

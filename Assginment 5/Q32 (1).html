@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check String or Number</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter a value">
+    <button onclick="checkType()">Check Type</button>
+
+    <script>
+        function checkType() {
+            const value = document.getElementById("txt").value;
+            if (isNaN(value)) {
+                console.log("The value is a string.");
+            } else {
+                console.log("The value is a number.");
+            }
+        }
+    </script>
+</body>
+</html>
